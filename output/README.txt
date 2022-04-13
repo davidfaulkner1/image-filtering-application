@@ -1,0 +1,1 @@
+*** README.txt here so output folder can be placed in zip for exported images ***
