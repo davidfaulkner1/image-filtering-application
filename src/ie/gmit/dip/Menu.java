@@ -35,6 +35,7 @@ public class Menu {
 				case 5 -> {
 					System.out.println("[INFO] Shutting down, please wait...");
 					keepRunning = false;
+					System.out.println("[INFO] Application closed.");
 				}
 				default -> System.out.println("[ERROR] Invalid input selection.");
 			}
@@ -109,7 +110,7 @@ public class Menu {
 
 		BufferedImage inputOutput = checkForOutput(); // set "inputOutput" as either the input or output image to edit to allow for merging of multiple edits on the same image
 
-		// switch case tp call createFilter method in EditImage.java class depending on the filter chosen and this equals output image in Image.java class
+		// switch case to call createFilter method in EditImage.java class depending on the filter chosen and this equals output image in Image.java class
 		System.out.println(ConsoleColour.RED_BRIGHT); // console text colour start
 		switch (userInput) {
 			case 1 -> i.setOutputImage(edit.createFilter(inputOutput, "identity"));

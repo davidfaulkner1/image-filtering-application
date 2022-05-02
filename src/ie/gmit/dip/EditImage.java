@@ -80,7 +80,7 @@ public class EditImage {
 
 		BufferedImage output = new BufferedImage(width, height, img.getType()); // initialise and set new edited pic as output
 
-		//iterate through each pixel in imagem against the kernel matrix and produces new pixel depending on surrounding pixels and kernel matrix structure
+		//iterate through each pixel in image against the kernel matrix and produces new pixel depending on surrounding pixels and kernel matrix structure
 		for (int y = 0; y < height; y++) { // iterate through each row in image
 			for (int x = 0; x < width; x++) { // iterate through each pixel in row
 				float red = 0f, green = 0f, blue = 0f; // initialise rgb values
